@@ -230,14 +230,18 @@ function AddSections(Course){
     });
 }
 
-function AddToText(Section){
-    var sid = Section.getAttribute('id');
+function AddToText(Select){
+    var sid = Select.getAttribute('id');
     var tbox = document.getElementById("s" + sid[1]);
-    if (tbox.value == ""){
-        tbox.value = Section.value;
+    for (let i = Select.length - 1; i >= 0; i--) {
+        if (Select[i].selected == true){
+            if (tbox.value == ""){
+                tbox.value = Select[i].value;
+            }
+            else{
+                tbox.value = tbox.value + "|" + Select[i].value;
+            }
+            Select.remove(i);
+        }
     }
-    else{
-        tbox.value = tbox.value + "|" + Section.value;
-    }
-    Section.remove(Section.selectedIndex);
 }
