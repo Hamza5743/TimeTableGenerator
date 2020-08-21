@@ -144,7 +144,9 @@ function GenerateTable(Filtered, Depth, TimeTable){
 
 function ProduceTimeTable(){
     var Pdiv = document.getElementById("Output");
+    var Ediv = document.getElementById("Error");
     Pdiv.innerHTML = "";
+    Ediv.innerHTML = "";
     var AllowedPeriods = [];
     for (let i = 0; i < 5; i++) {
         let row = [];
