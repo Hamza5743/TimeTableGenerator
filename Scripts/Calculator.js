@@ -38,6 +38,10 @@ function filter(CourseNames, Sections, AllowedPeriods){
                             }
                             else if (CourseSectionsSort[0] == "Banned"){
                                 if (preci != j || presi != k){
+                                    if (CourseTypeSort.length != 0){
+                                        Filtered.push(CourseTypeSort);
+                                        CourseTypeSort = [];
+                                    }
                                     CourseSectionsSort = [];
                                     CourseSectionsSort.push(Courses[i]);
                                 }
