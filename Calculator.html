@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TimeTable Calculator!
+        </title>
+        <script src="./Scripts/Data.js"></script>
+        <script src="./Scripts/Calculator.js"></script>
+        <link rel="stylesheet" type="text/css" href="./Scripts/bootstrap.min.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="./Scripts/Favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./Scripts/Favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./Scripts/Favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./Scripts/Favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./Scripts/Favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./Scripts/Favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./Scripts/Favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./Scripts/Favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./Scripts/Favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./Scripts/Favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./Scripts/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./Scripts/Favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./Scripts/Favicons/favicon-16x16.png">
+        <link rel="manifest" href="./Scripts/Favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./Scripts/Favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8">
+        <style>
+            .table{
+                text-align: center;
+                margin-left: 5%;
+                width: 90%;
+            }
+
+            .btn{
+                margin-bottom: 30px;
+            }
+
+            h1{
+                text-align: center;
+                padding: 40px;
+            }
+
+            body{
+                width: 100%;
+                background-color:whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">TimeTable Generator!</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3 style="text-align: center;">Course 1</h3>
+                    <select class="CourseName c1 custom-select my-auto" onclick="AddCourseSelection()" onchange="AddSections(this)">
+                        <option value="Please Select a Course." selected hidden>Please Select a Course.</option>
+                    </select>
+                </div>
+                <div class="col-md">
+                    <select multiple id="c1" class="custom-select form-control" oninput="AddToText(this)"> 
+                        <option value="Please Select a Section." selected disabled>Please Select a Section.</option>
+                    </select>
+                    <input type="text" id="s1" class="CourseSection form-control" autocomplete="off" placeholder="Selected Sections"/>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3 style="text-align: center;">Course 2</h3>
+                    <select class="CourseName c2 custom-select my-auto" onclick="AddCourseSelection()" onchange="AddSections(this)">
+                        <option value="Please Select a Course." selected hidden>Please Select a Course.</option>
+                    </select>
+                </div>
+                <div class="col-md">
+                    <select multiple id="c2" class="custom-select form-control" oninput="AddToText(this)"> 
+                        <option value="Please Select a Section." selected disabled>Please Select a Section.</option>
+                    </select>
+                    <input type="text" id="s2" class="CourseSection form-control" autocomplete="off" placeholder="Selected Sections"/>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3 style="text-align: center;">Course 3</h3>
+                    <select class="CourseName c3 custom-select my-auto" onclick="AddCourseSelection()" onchange="AddSections(this)">
+                        <option value="Please Select a Course." selected hidden>Please Select a Course.</option>
+                    </select>
+                </div>
+                <div class="col-md">
+                    <select multiple id="c3" class="custom-select form-control" oninput="AddToText(this)"> 
+                        <option value="Please Select a Section." selected disabled>Please Select a Section.</option>
+                    </select>
+                    <input type="text" id="s3" class="CourseSection form-control" autocomplete="off" placeholder="Selected Sections"/>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3 style="text-align: center;">Course 4</h3>
+                    <select class="CourseName c4 custom-select my-auto" onclick="AddCourseSelection()" onchange="AddSections(this)">
+                        <option value="Please Select a Course." selected hidden>Please Select a Course.</option>
+                    </select>
+                </div>
+                <div class="col-md">
+                    <select multiple id="c4" class="custom-select form-control" oninput="AddToText(this)"> 
+                        <option value="Please Select a Section." selected disabled>Please Select a Section.</option>
+                    </select>
+                    <input type="text" id="s4" class="CourseSection form-control" autocomplete="off" placeholder="Selected Sections"/>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3 style="text-align: center;">Course 5</h3>
+                    <select class="CourseName c5 custom-select my-auto" onclick="AddCourseSelection()" onchange="AddSections(this)">
+                        <option value="Please Select a Course." selected hidden>Please Select a Course.</option>
+                    </select>
+                </div>
+                <div class="col-md">
+                    <select multiple id="c5" class="custom-select form-control" oninput="AddToText(this)"> 
+                        <option value="Please Select a Section." selected disabled>Please Select a Section.</option>
+                    </select>
+                    <input type="text" id="s5" class="CourseSection form-control" autocomplete="off" placeholder="Selected Sections"/>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <th></th>
+                <th>8.00-9.30</th>
+                <th>9.30-11.00</th>
+                <th>11.00-12.30</th>
+                <th>12.30-2.00</th>
+                <th>2.00-3.30</th>
+                <th>3.30-5.00</th>
+                <th>5.00-6.30</th>
+                <th>6.30-8.00</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td><input type="checkbox" id="00" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="01" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="02" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="03" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="04" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="05" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="06" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="07" checked/>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td><input type="checkbox" id="10" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="11" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="12" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="13" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="14" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="15" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="16" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="17" checked/>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td><input type="checkbox" id="20" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="21" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="22" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="23" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="24" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="25" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="26" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="27" checked/>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td><input type="checkbox" id="30" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="31" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="32" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="33" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="34" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="35" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="36" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="37" checked/>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td><input type="checkbox" id="40" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="41" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="42" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="43" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="44" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="45" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="46" checked/>&nbsp;</td>
+                    <td><input type="checkbox" id="47" checked/>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center;">
+            <div id="Error"></div>
+            <input class="btn btn-primary btn-lg" type="button" value="GENERATE" onclick="ProduceTimeTable()">
+        </div>
+        <div id="Output"></div>
+    </body>
+</html>
