@@ -37,8 +37,8 @@ function filter(CourseNames, Sections, AllowedPeriods){
                                 CourseSectionsSort.push(Courses[i]);
                             }
                             else if (CourseSectionsSort[0] == "Banned"){
-                                if (preci != j || presi != k){
-                                    if (CourseTypeSort.length != 0){
+                                if ((preci == j && preci != k) || preci != j){
+                                    if (preci != j && CourseTypeSort.length != 0){
                                         Filtered.push(CourseTypeSort);
                                         CourseTypeSort = [];
                                     }
