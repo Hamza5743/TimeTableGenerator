@@ -84,7 +84,7 @@ function PrintTable(TimeTable){
     var Pdiv = document.getElementById("Output");
     var Table = document.createElement("table");
     Table.className = "table table-bordered";
-    Days = ["Monday","Tuesday","Wednesday","Thursday","Friday"]
+    Days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
     Timings = ["","8.00-9.30","9.30-11.00","11.00-12.30","12.30-2.00","2.00-3.30","3.30-5.00","5.00-6.30","6.30-8.00"]
     var head = Table.createTHead();
     head.className = "thead-dark";
@@ -95,7 +95,7 @@ function PrintTable(TimeTable){
         hrow.appendChild(hcell);
     }
     var body = Table.createTBody();
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         var row = body.insertRow();
         hcell = document.createElement("th");
         hcell.innerHTML = Days[i];
@@ -180,7 +180,7 @@ function ProduceTimeTable(){
     }
     else{
         TimeTable = [];
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             TimeTable.push(["-","-","-","-","-","-","-","-"]);
         }
         GenerateTable(Filtered, 0, TimeTable);
