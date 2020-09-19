@@ -152,7 +152,7 @@ function ProduceTimeTable(){
     Pdiv.innerHTML = "";
     Ediv.innerHTML = "";
     var AllowedPeriods = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         let row = [];
         for (let j = 0; j < 8; j++) {
             row.push(document.getElementById(String(i) + String(j)).checked);
