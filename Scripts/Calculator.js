@@ -199,7 +199,6 @@ function ProduceTimeTable(){
 
 function AddCourseSelection(){
     var select = document.getElementsByClassName("CourseName");
-    Courses.sort();
     for (let i = 0; i < select.length; i++) {
         prev = "";
         Courses.forEach(element => {
