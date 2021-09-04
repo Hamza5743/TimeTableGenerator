@@ -85,7 +85,7 @@ function PrintTable(TimeTable){
     var Table = document.createElement("table");
     Table.className = "table table-bordered";
     Days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-    Timings = ["","8.00-9.30","9.30-11.00","11.00-12.30","12.30-2.00","2.00-3.30","3.30-5.00","5.00-6.30","6.30-8.00"]
+    Timings = ["","8.30-10.00","10.00-11.30","11.30-1.00","1.00-2.30","2.30-4.00","4.00-5.30","5.30-7.00","7.00-8.30"]
     var head = Table.createTHead();
     head.className = "thead-dark";
     var hrow = head.insertRow();
