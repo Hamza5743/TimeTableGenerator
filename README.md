@@ -3,13 +3,15 @@
 # Time Table Generator For FAST - NUCES
 
 Use it to generate clash less timetables according to the times you want a break and the courses+sections you want to choose It will give you all the possible time tables according to your schedule.
- Click on the link to give it a go. [Timetable Generator](https://hamza5743.github.io/TimeTableGenerator/Calculator.html)
+ Click on the [link](https://hamza5743.github.io/TimeTableGenerator/Calculator.html) to give it a go.
+ 
+Or visit the [Repo.](https://github.com/Hamza5743/TimeTableGenerator)
 
 ## Features
 - Clashless Time Table.
 - Interactive design for adding breaks.
 - Shows Multiple possibilities.
-- Ability to select multiple sections for a each course.
+- Ability to select multiple sections for each course.
 
 ## How To Use
 
