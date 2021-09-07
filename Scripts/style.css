@@ -1,0 +1,59 @@
+.table{
+    text-align: center;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.btn{
+    margin-bottom: 30px;
+}
+
+.center-align{
+    width:50%;
+    margin: auto;
+}
+
+.container{
+    margin-bottom: 20px;
+}
+
+.columnBox{
+    background-color: rgb(101, 112, 122);
+    border-color: rgb(101, 112, 122);
+}
+
+h1{
+    text-align: center;
+    padding: 40px 40px 10px 40px;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+th{
+    width: 10%;
+}
+
+td{
+    white-space: pre-wrap;
+}
+
+body{
+    width: 100%;
+    background-color:whitesmoke;
+}
+
+#sCol{
+    white-space: nowrap;
+    background-color: cadetblue;
+    border-color: cadetblue;
+}
+
+#sRow{
+    white-space: nowrap;
+    background-color: cadetblue;
+    border-color: cadetblue;
+    color: rgb(33, 37, 41);
+}
