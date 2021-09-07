@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Instructions...</title>
-        <link rel="stylesheet" type="text/css" href="./Scripts/bootstrap.min.css">
-        <link rel="apple-touch-icon" sizes="57x57" href="./Scripts/Favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./Scripts/Favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./Scripts/Favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./Scripts/Favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./Scripts/Favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./Scripts/Favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./Scripts/Favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./Scripts/Favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./Scripts/Favicons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./Scripts/Favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./Scripts/Favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./Scripts/Favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./Scripts/Favicons/favicon-16x16.png">
-        <link rel="manifest" href="./Scripts/Favicons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./Scripts/Favicons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body>
-        <h1 style="text-align: center;">Instructions</h1>
-        <h5>1) Open <a href="Calculator.html" target="_blank">Calculator.html.</a></h5>
-        <h5>2) Choose your course from drop down list. You can choose a maximum of 5 courses but there is no lower limit.</h5>
-        <h5>3) After choosing course, choose all sections of that course that you want to consider in your timetable.</h5>
-        <h5>
-            4) After choosing courses and subjects, scroll down to the table with checkboxes in it. Each cell corresponds
-            to a specific period of day. If you don't want a class at that time simply uncheck the checkbox at that position.
-        </h5>
-        <h5>5) Finally click GENERATE and all feasible clashless timetables will be generated.</h5>
-        <br><br>
-        <h2>Disclaimer!</h2>
-        <h5>This only works for timetable v(1.3). If a new version comes please download the project again from <a href="https://github.com/Hamza5743/TimeTableGenerator" target="_blank">here</a>.</h5>
-    </body>
+
+<head>
+    <title>Instructions...</title>
+    <link rel="stylesheet" type="text/css" href="./Scripts/bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./Scripts/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./Scripts/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./Scripts/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./Scripts/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./Scripts/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./Scripts/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Scripts/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./Scripts/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Scripts/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./Scripts/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Scripts/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./Scripts/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Scripts/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="./Scripts/Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./Scripts/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div id="readme" class="readme prose-diff html-blob blob">
+        <div class="markdown-body container-lg">
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href="https://camo.githubusercontent.com/cde3c971bc2237f6b9f983ceeeb495e04c6f77c817f8ccf7aa17d2b8079c9335/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6e7472696275746f72732f48616d7a61353734332f54696d655461626c6547656e657261746f722e7376673f7374796c653d666c61742d737175617265"><img
+                        src="https://camo.githubusercontent.com/cde3c971bc2237f6b9f983ceeeb495e04c6f77c817f8ccf7aa17d2b8079c9335/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6e7472696275746f72732f48616d7a61353734332f54696d655461626c6547656e657261746f722e7376673f7374796c653d666c61742d737175617265"
+                        alt="Contributors"
+                        data-canonical-src="https://img.shields.io/github/contributors/Hamza5743/TimeTableGenerator.svg?style=flat-square"
+                        style="max-width: 100%;"></a> <a target="_blank" rel="noopener noreferrer"
+                    href="https://camo.githubusercontent.com/a748944b3eafcef522705703c14e85f48098a261d656c1f9db991289589f75c0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f48616d7a61353734332f54696d655461626c6547656e657261746f722e7376673f7374796c653d666c61742d737175617265"><img
+                        src="https://camo.githubusercontent.com/a748944b3eafcef522705703c14e85f48098a261d656c1f9db991289589f75c0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f48616d7a61353734332f54696d655461626c6547656e657261746f722e7376673f7374796c653d666c61742d737175617265"
+                        alt="stars"
+                        data-canonical-src="https://img.shields.io/github/stars/Hamza5743/TimeTableGenerator.svg?style=flat-square"
+                        style="max-width: 100%;"></a> <a target="_blank" rel="noopener noreferrer"
+                    href="https://camo.githubusercontent.com/2085f8aa7d0df585de2a0be0a0009b6fde2abe1cf91f210fe52c125261f24f45/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f77617463686572732f48616d7a61353734332f54696d655461626c6547656e657261746f722e7376673f7374796c653d666c61742d737175617265"><img
+                        src="https://camo.githubusercontent.com/2085f8aa7d0df585de2a0be0a0009b6fde2abe1cf91f210fe52c125261f24f45/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f77617463686572732f48616d7a61353734332f54696d655461626c6547656e657261746f722e7376673f7374796c653d666c61742d737175617265"
+                        alt="Contributors"
+                        data-canonical-src="https://img.shields.io/github/watchers/Hamza5743/TimeTableGenerator.svg?style=flat-square"
+                        style="max-width: 100%;"></a></p>
+            <h1><a id="user-content-time-table-generator-for-fast---nuces" class="anchor" aria-hidden="true"
+                    href="#time-table-generator-for-fast---nuces"><svg class="octicon octicon-link" viewBox="0 0 16 16"
+                        version="1.1" width="16" height="16" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                        </path>
+                    </svg></a>Time Table Generator For FAST - NUCES</h1>
+            <p>Use it to generate clash less timetables according to the times you want a break and the courses+sections
+                you want to choose It will give you all the possible time tables according to your schedule.
+                Click on the <a href="https://hamza5743.github.io/TimeTableGenerator/Calculator.html"
+                    rel="nofollow">link</a> to give it a go.</p>
+            <p>Or visit the <a href="https://github.com/Hamza5743/TimeTableGenerator">Repo.</a></p>
+            <h2><a id="user-content-features" class="anchor" aria-hidden="true" href="#features"><svg
+                        class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                        </path>
+                    </svg></a>Features</h2>
+            <ul>
+                <li>Clashless Time Table.</li>
+                <li>Interactive design for adding breaks.</li>
+                <li>Shows Multiple possibilities.</li>
+                <li>Ability to select multiple sections for each course.</li>
+            </ul>
+            <h2><a id="user-content-how-to-use" class="anchor" aria-hidden="true" href="#how-to-use"><svg
+                        class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                        </path>
+                    </svg></a>How To Use</h2>
+            <ol>
+                <li>Choose all the courses that you want to study.</li>
+            </ol>
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href="/Screenshots/Courses.png"><img
+                        src="/Screenshots/Courses.png" alt="Course Selection"
+                        style="max-width: 100%;"></a></p>
+            <ol start="2">
+                <li>Check your desired sections from the table.</li>
+            </ol>
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href="/Screenshots/Sections.png"><img
+                        src="/Screenshots/Sections.png" alt="Section Selection"
+                        style="max-width: 100%;"></a></p>
+            <ol start="3">
+                <li>Check your desired timeslots from the bottom table.</li>
+            </ol>
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href="/Screenshots/Slots.png"><img
+                        src="/Screenshots/Slots.png" alt="Timeslot Selection"
+                        style="max-width: 100%;"></a></p>
+            <ol start="4">
+                <li>
+                    <p>Press the GENERATE button.</p>
+                </li>
+                <li>
+                    <p>If there are no clashes the site will generate schedule(s) under the generate button. scroll down
+                        to see the tables.</p>
+                </li>
+            </ol>
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href="/Screenshots/Timetable.png"><img
+                        src="/Screenshots/Timetable.png" alt="Generated Tables"
+                        style="max-width: 100%;"></a></p>
+
+        </div>
+    </div>
+</body>
+
 </html>
