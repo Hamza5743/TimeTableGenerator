@@ -2,7 +2,8 @@
 
 # Time Table Generator For FAST - NUCES
 
-Use it to generate clash less timetables according to the times you want a break and the courses+sections you want to choose It will give you all the possible time tables according to your schedule. So give it a go. https://hamza5743.github.io/TimeTableGenerator/Calculator.html
+Use it to generate clash less timetables according to the times you want a break and the courses+sections you want to choose It will give you all the possible time tables according to your schedule.
+ Click on the link to give it a go. [Timetable Generator](https://hamza5743.github.io/TimeTableGenerator/Calculator.html)
 
 ## Features
 - Clashless Time Table.
@@ -12,20 +13,20 @@ Use it to generate clash less timetables according to the times you want a break
 
 ## How To Use
 
-1. Choose all the courses and their respective sections you want to decide. 
+1. Choose all the courses that you want to study. 
 
-![Course Selection](https://i.imgur.com/dLb3bn6.png)
+![Course Selection](/Screenshots/Courses.png)
 
-2. Select your desired sections from the right table.
+2. Check your desired sections from the table.
 
-![Section Selection](https://i.imgur.com/S8GzxPb.png)
+![Section Selection](/Screenshots/Sections.png)
 
-3. Check your desire timeslots from the bottom table.
+3. Check your desired timeslots from the bottom table.
 
-![timeslot selection](https://i.imgur.com/yr5YRy8.png)
+![Timeslot Selection](/Screenshots/Slots.png)
 
-4. Press the generated button.
+4. Press the GENERATE button.
 
-5. If there are no clashes the site will generate schedule(s) under the generate button. scroll down to see the tables
+5. If there are no clashes the site will generate schedule(s) under the generate button. scroll down to see the tables.
 
-![generated tables](https://i.imgur.com/AcENv4K.png)
+![Generated Tables](/Screenshots/Timetable.png)
