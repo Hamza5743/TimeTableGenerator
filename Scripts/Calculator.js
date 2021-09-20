@@ -243,7 +243,7 @@ function AddSections(Course){
             check.className = "form-check-input me-1 " + table.id + "s";
             check.value = "";
             check.style = "margin-left: auto; position: static;";
-            check.defaultChecked = true;
+            document.getElementById("rad1").checked ? check.defaultChecked = true : check.defaultChecked = false;
             check.name = section;
             label.appendChild(check);
             label.innerHTML += "\n&nbsp&nbsp&nbsp" + section;
