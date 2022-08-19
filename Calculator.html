@@ -44,12 +44,29 @@
                 <input type="checkbox" style = "margin-left: auto; position: static;" class="form-check-input   me-1" name="togglechecks" default="" value="" id="rad1">
                 Check All Sections by Default?
             </label>
+            <div class="col-md justify-content-center my-auto">
+                <div>
+                    <h3 >Semester(Optional) </h3>
+                    <select class="Semester custom-select" id="Sems" onchange="loadsems()">
+                        <option value="-1" selected>Please Select Semester.</option>
+                        <option value="1" selected>1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4" selected>4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6" selected>6</option>
+                        <option value="7" selected>7</option>
+                        <option value="8" selected>8</option>
+                        <option value="-1" selected>Please Select Semester.</option>
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md">
                     <h3>Course 1</h3>
-                    <select class="CourseName c1 custom-select my-auto" onchange="AddSections(this)">
+                    <select class="CourseName c1 custom-select my-auto" id="c1c" onchange="AddSections(this)">
                         <option value="Please Select a Course." selected>Please Select a Course.</option>
                     </select>
                     <div id="c1">
@@ -58,7 +75,7 @@
                 <br>
                 <div class="col-md">
                     <h3>Course 2</h3>
-                    <select class="CourseName c2 custom-select my-auto" onchange="AddSections(this)">
+                    <select class="CourseName c2 custom-select my-auto" id="c2c" onchange="AddSections(this)">
                         <option value="Please Select a Course." selected>Please Select a Course.</option>
                     </select>
                     <div id="c2">
@@ -71,7 +88,7 @@
             <div class="row">
                 <div class="col-md">
                     <h3>Course 3</h3>
-                    <select class="CourseName c3 custom-select my-auto" onchange="AddSections(this)">
+                    <select class="CourseName c3 custom-select my-auto" id="c3c" onchange="AddSections(this)">
                         <option value="Please Select a Course." selected>Please Select a Course.</option>
                     </select>
                     <div id="c3">
@@ -80,7 +97,7 @@
                 <br>
                 <div class="col-md">
                     <h3>Course 4</h3>
-                    <select class="CourseName c4 custom-select my-auto" onchange="AddSections(this)">
+                    <select class="CourseName c4 custom-select my-auto" id="c4c" onchange="AddSections(this)">
                         <option value="Please Select a Course." selected>Please Select a Course.</option>
                     </select>
                     <div id="c4">
@@ -92,7 +109,7 @@
         <div class="container">
             <div class="center-align">
                 <h3>Course 5</h3>
-                <select class="CourseName c5 custom-select my-auto" onchange="AddSections(this)">
+                <select class="CourseName c5 custom-select my-auto" id="c5c" onchange="AddSections(this)">
                     <option value="Please Select a Course." selected>Please Select a Course.</option>
                 </select>
                 <div id="c5">
