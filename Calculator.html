@@ -46,7 +46,13 @@
             </label>
             <div class="col-md justify-content-center my-auto">
                 <div>
-                    <h3 >Semester(Optional) </h3>
+                    
+                </div>
+            </div>
+        </div><div class="container">
+            <div class="row">
+                <div class="col-md">
+                   <h3 >Semester(Optional) </h3>
                     <select class="Semester custom-select" id="Sems" onchange="loadsems()">
                         <option value="-1" selected>Please Select Semester(CS_Only).</option>
                         <option value="1" selected>1</option>
@@ -59,6 +65,17 @@
                         <option value="8" selected>8</option>
                         <option value="-1" selected>Please Select Semester(CS_Only).</option>
                     </select>
+                    <div id="Semster">
+                    </div>
+                </div>
+                <br>
+                <div class="col-md">
+                    <h3>Course 2</h3>
+                    <select class="CourseName c2 custom-select my-auto" id="c2c" onchange="AddSections(this)">
+                        <option value="Please Select a Course." selected>Please Select a Course.</option>
+                    </select>
+                    <div id="c2">
+                    </div>
                 </div>
             </div>
         </div>
