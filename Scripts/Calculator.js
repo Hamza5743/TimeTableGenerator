@@ -288,3 +288,79 @@ window.onload = function AddCourseSelection(){
         });
     }
 }
+
+function loaddatabyfield(obj,value){
+    var element = document.getElementById(obj);
+    element.value = value;
+    AddSections(element);
+}
+
+function loadsems(){
+    var def="Please Select a Course.";
+    var Semesterselect = document.getElementById("Sems").value;
+    console.log(Semesterselect);
+    if(Semesterselect==-1)
+    {
+        document. location. reload();
+    }
+    else if(Semesterselect==1)
+    {
+        loaddatabyfield("c1c","English Composition and Comprehension");
+        loaddatabyfield("c2c","Programming Fundamentals");
+        loaddatabyfield("c3c","Applied Physics");
+        loaddatabyfield("c4c","Calculus and Ana. Geometry");
+        loaddatabyfield("c5c","Pakistan Studies");
+    }
+    else if(Semesterselect == 2)
+    {
+        loaddatabyfield("c1c","Object Oriented Programming");
+        loaddatabyfield("c2c","Digital Logic Design");
+        loaddatabyfield("c3c","Differential Equations");
+        loaddatabyfield("c4c","Islamic & Religious Studies");
+        loaddatabyfield("c5c",def);
+    }
+    else if(Semesterselect == 3)
+    {
+        loaddatabyfield("c1c","Data Structures");
+        loaddatabyfield("c2c","Com. Org. & Assembly Lang.");
+        loaddatabyfield("c3c","Discrete Structures");
+        loaddatabyfield("c4c","Linear Algebra");
+        loaddatabyfield("c5c",def);
+    }
+    else if(Semesterselect == 4)
+    {
+        loaddatabyfield("c1c","Database Systems");
+        loaddatabyfield("c2c","Operating Systems");
+        loaddatabyfield("c3c","Design & Analysis of Algo");
+        loaddatabyfield("c4c","Probability and Statistics");
+        loaddatabyfield("c5c",def);
+    }
+    else if (Semesterselect == 5)
+    {
+   
+        loaddatabyfield("c1c","Tech. & Business Writing");
+        loaddatabyfield("c2c","Theory of Automata");
+        loaddatabyfield("c3c","Software Design & Analysis");
+        loaddatabyfield("c4c","Numerical Computing");
+        loaddatabyfield("c5c","Computer Networks");
+    }
+    else if(Semesterselect == 6)
+    {
+        loaddatabyfield("c1c","Software Engineering");
+        loaddatabyfield("c2c","Parallel and Dist. Computing");
+        loaddatabyfield("c3c","Artificial Intelligence");
+        loaddatabyfield("c4c",def);
+        loaddatabyfield("c5c",def);
+    }
+    else if(Semesterselect == 7)
+    {
+        loaddatabyfield("c1c","Information Security");
+        loaddatabyfield("c2c","Professional Practices");
+        loaddatabyfield("c3c",def);
+        loaddatabyfield("c4c",def);
+        loaddatabyfield("c5c",def);
+    }
+    else{
+        document. location. reload();
+    }
+}

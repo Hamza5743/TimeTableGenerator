@@ -1,210 +1,246 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            TimeTable Calculator!
-        </title>
-        <script src="./Scripts/Data.js"></script>
-        <script src="./Scripts/Calculator.js"></script>
-        <link rel="stylesheet" type="text/css" href="./Scripts/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./Scripts/style.css">
-        <link rel="apple-touch-icon" sizes="57x57" href="./Scripts/Favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./Scripts/Favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./Scripts/Favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./Scripts/Favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./Scripts/Favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./Scripts/Favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./Scripts/Favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./Scripts/Favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./Scripts/Favicons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./Scripts/Favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./Scripts/Favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./Scripts/Favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./Scripts/Favicons/favicon-16x16.png">
-        <link rel="manifest" href="./Scripts/Favicons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./Scripts/Favicons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta charset="UTF-8">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-19EHW1W4K3"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-19EHW1W4K3');
-        </script>
-    </head>
-    <body>
-        <h1>TimeTable Generator!</h1>
-        <h3 style="padding-bottom: 40px;">Version 1.4 - Fall 2022</h3>
-        <div style="margin-bottom: 20px;">
-            <label for="rad1" class="form-check-label" style = "margin-left: 40%; position: static;">
-                <input type="checkbox" style = "margin-left: auto; position: static;" class="form-check-input   me-1" name="togglechecks" default="" value="" id="rad1">
-                Check All Sections by Default?
-            </label>
-        </div>
+<head>
+    <title>
+        TimeTable Calculator!
+    </title>
+    <script src="./Scripts/Data.js"></script>
+    <script src="./Scripts/Calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Scripts/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Scripts/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./Scripts/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./Scripts/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./Scripts/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./Scripts/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./Scripts/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./Scripts/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Scripts/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./Scripts/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Scripts/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./Scripts/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Scripts/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./Scripts/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Scripts/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="./Scripts/Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./Scripts/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19EHW1W4K3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-19EHW1W4K3');
+    </script>
+</head>
+
+<body>
+    <h1>TimeTable Generator!</h1>
+    <h3 style="padding-bottom: 40px;">Version 1.4 - Fall 2022</h3>
+    <div style="margin-bottom: 20px;">
+        <label for="rad1" class="form-check-label" style="margin-left: 40%; position: static;">
+            <input type="checkbox" style="margin-left: auto; position: static;" class="form-check-input   me-1"
+                name="togglechecks" default="" value="" id="rad1">
+            Check All Sections by Default?
+        </label>
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <h3>Course 1</h3>
-                    <select class="CourseName c1 custom-select my-auto" onchange="AddSections(this)">
-                        <option value="Please Select a Course." selected>Please Select a Course.</option>
-                    </select>
-                    <div id="c1">
-                    </div>
-                </div>
-                <br>
-                <div class="col-md">
                     <h3>Course 2</h3>
-                    <select class="CourseName c2 custom-select my-auto" onchange="AddSections(this)">
+                    <select class="Courses">
                         <option value="Please Select a Course." selected>Please Select a Course.</option>
+                        <option value="BSCS">CS</option>
                     </select>
                     <div id="c2">
                     </div>
                 </div>
-            </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <h3>Course 3</h3>
-                    <select class="CourseName c3 custom-select my-auto" onchange="AddSections(this)">
-                        <option value="Please Select a Course." selected>Please Select a Course.</option>
-                    </select>
-                    <div id="c3">
-                    </div>
-                </div>
                 <br>
                 <div class="col-md">
-                    <h3>Course 4</h3>
-                    <select class="CourseName c4 custom-select my-auto" onchange="AddSections(this)">
-                        <option value="Please Select a Course." selected>Please Select a Course.</option>
+                    <h3>Semester(Optional) </h3>
+                    <select class="Semester custom-select" id="Sems" onchange="loadsems()">
+                        <option value="-1" selected>Please Select Semester(CS_Only).</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
                     </select>
-                    <div id="c4">
+                    <div id="Semster">
                     </div>
                 </div>
+
             </div>
         </div>
-        <br>
-        <div class="container">
-            <div class="center-align">
-                <h3>Course 5</h3>
-                <select class="CourseName c5 custom-select my-auto" onchange="AddSections(this)">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h3>Course 1</h3>
+                <select class="CourseName c1 custom-select my-auto" id="c1c" onchange="AddSections(this)">
                     <option value="Please Select a Course." selected>Please Select a Course.</option>
                 </select>
-                <div id="c5">
+                <div id="c1">
+                </div>
+            </div>
+            <br>
+            <div class="col-md">
+                <h3>Course 2</h3>
+                <select class="CourseName c2 custom-select my-auto" id="c2c" onchange="AddSections(this)">
+                    <option value="Please Select a Course." selected>Please Select a Course.</option>
+                </select>
+                <div id="c2">
                 </div>
             </div>
         </div>
-        <br><br>
-        <table class="table table-bordered">
-            <thead class="thead-dark">
-                <th></th>
-                <th>8.30-10.00</th>
-                <th>10.00-11.30</th>
-                <th>11.30-1.00</th>
-                <th>1.00-2.30</th>
-                <th>2.30-4.00</th>
-                <th>4.00-5.30</th>
-                <th>5.30-7.00</th>
-                <th>7.00-8.30</th>
-                <th id="sRow">Select Row</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Monday</th>
-                    <td><input type="checkbox" id="00" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="01" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="02" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="03" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="04" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="05" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="06" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="07" checked/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="r0" checked onclick="ToggleRow(this)"/>&nbsp;</td>
-                </tr>
-                <tr>
-                    <th>Tuesday</th>
-                    <td><input type="checkbox" id="10" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="11" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="12" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="13" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="14" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="15" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="16" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="17" checked/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="r1" checked onclick="ToggleRow(this)"/>&nbsp;</td>
-                </tr>
-                <tr>
-                    <th>Wednesday</th>
-                    <td><input type="checkbox" id="20" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="21" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="22" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="23" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="24" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="25" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="26" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="27" checked/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="r2" checked onclick="ToggleRow(this)"/>&nbsp;</td>
-                </tr>
-                <tr>
-                    <th>Thursday</th>
-                    <td><input type="checkbox" id="30" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="31" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="32" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="33" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="34" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="35" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="36" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="37" checked/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="r3" checked onclick="ToggleRow(this)"/>&nbsp;</td>
-                </tr>
-                <tr>
-                    <th>Friday</th>
-                    <td><input type="checkbox" id="40" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="41" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="42" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="43" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="44" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="45" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="46" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="47" checked/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="r4" checked onclick="ToggleRow(this)"/>&nbsp;</td>
-                </tr>
-                <tr>
-                    <th>Saturday</th>
-                    <td><input type="checkbox" id="50" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="51" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="52" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="53" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="54" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="55" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="56" checked/>&nbsp;</td>
-                    <td><input type="checkbox" id="57" checked/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="r5" checked onclick="ToggleRow(this)"/>&nbsp;</td>
-                </tr>
-                <tr>
-                    <th id="sCol">Select Column</th>
-                    <td class="columnBox"><input type="checkbox" id="c0" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="c1" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="c2" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="c3" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="c4" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="c5" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="c6" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    <td class="columnBox"><input type="checkbox" id="c7" checked onclick="ToggleCol(this)"/>&nbsp;</td>
-                    
-                </tr>
-            </tbody>
-        </table>
-        <div style="text-align: center;">
-            <div id="Error"></div>
-            <input class="btn btn-primary btn-lg" type="button" value="GENERATE" onclick="ProduceTimeTable()">
-            <h5>or see <a href="Instructions.html" target="_blank">instructions</a></h5>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h3>Course 3</h3>
+                <select class="CourseName c3 custom-select my-auto" id="c3c" onchange="AddSections(this)">
+                    <option value="Please Select a Course." selected>Please Select a Course.</option>
+                </select>
+                <div id="c3">
+                </div>
+            </div>
+            <br>
+            <div class="col-md">
+                <h3>Course 4</h3>
+                <select class="CourseName c4 custom-select my-auto" id="c4c" onchange="AddSections(this)">
+                    <option value="Please Select a Course." selected>Please Select a Course.</option>
+                </select>
+                <div id="c4">
+                </div>
+            </div>
         </div>
-        <div id="Output"></div>
-    </body>
+    </div>
+    <br>
+    <div class="container">
+        <div class="center-align">
+            <h3>Course 5</h3>
+            <select class="CourseName c5 custom-select my-auto" id="c5c" onchange="AddSections(this)">
+                <option value="Please Select a Course." selected>Please Select a Course.</option>
+            </select>
+            <div id="c5">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <th></th>
+            <th>8.30-10.00</th>
+            <th>10.00-11.30</th>
+            <th>11.30-1.00</th>
+            <th>1.00-2.30</th>
+            <th>2.30-4.00</th>
+            <th>4.00-5.30</th>
+            <th>5.30-7.00</th>
+            <th>7.00-8.30</th>
+            <th id="sRow">Select Row</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td><input type="checkbox" id="00" checked />&nbsp;</td>
+                <td><input type="checkbox" id="01" checked />&nbsp;</td>
+                <td><input type="checkbox" id="02" checked />&nbsp;</td>
+                <td><input type="checkbox" id="03" checked />&nbsp;</td>
+                <td><input type="checkbox" id="04" checked />&nbsp;</td>
+                <td><input type="checkbox" id="05" checked />&nbsp;</td>
+                <td><input type="checkbox" id="06" checked />&nbsp;</td>
+                <td><input type="checkbox" id="07" checked />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="r0" checked onclick="ToggleRow(this)" />&nbsp;</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td><input type="checkbox" id="10" checked />&nbsp;</td>
+                <td><input type="checkbox" id="11" checked />&nbsp;</td>
+                <td><input type="checkbox" id="12" checked />&nbsp;</td>
+                <td><input type="checkbox" id="13" checked />&nbsp;</td>
+                <td><input type="checkbox" id="14" checked />&nbsp;</td>
+                <td><input type="checkbox" id="15" checked />&nbsp;</td>
+                <td><input type="checkbox" id="16" checked />&nbsp;</td>
+                <td><input type="checkbox" id="17" checked />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="r1" checked onclick="ToggleRow(this)" />&nbsp;</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td><input type="checkbox" id="20" checked />&nbsp;</td>
+                <td><input type="checkbox" id="21" checked />&nbsp;</td>
+                <td><input type="checkbox" id="22" checked />&nbsp;</td>
+                <td><input type="checkbox" id="23" checked />&nbsp;</td>
+                <td><input type="checkbox" id="24" checked />&nbsp;</td>
+                <td><input type="checkbox" id="25" checked />&nbsp;</td>
+                <td><input type="checkbox" id="26" checked />&nbsp;</td>
+                <td><input type="checkbox" id="27" checked />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="r2" checked onclick="ToggleRow(this)" />&nbsp;</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td><input type="checkbox" id="30" checked />&nbsp;</td>
+                <td><input type="checkbox" id="31" checked />&nbsp;</td>
+                <td><input type="checkbox" id="32" checked />&nbsp;</td>
+                <td><input type="checkbox" id="33" checked />&nbsp;</td>
+                <td><input type="checkbox" id="34" checked />&nbsp;</td>
+                <td><input type="checkbox" id="35" checked />&nbsp;</td>
+                <td><input type="checkbox" id="36" checked />&nbsp;</td>
+                <td><input type="checkbox" id="37" checked />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="r3" checked onclick="ToggleRow(this)" />&nbsp;</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td><input type="checkbox" id="40" checked />&nbsp;</td>
+                <td><input type="checkbox" id="41" checked />&nbsp;</td>
+                <td><input type="checkbox" id="42" checked />&nbsp;</td>
+                <td><input type="checkbox" id="43" checked />&nbsp;</td>
+                <td><input type="checkbox" id="44" checked />&nbsp;</td>
+                <td><input type="checkbox" id="45" checked />&nbsp;</td>
+                <td><input type="checkbox" id="46" checked />&nbsp;</td>
+                <td><input type="checkbox" id="47" checked />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="r4" checked onclick="ToggleRow(this)" />&nbsp;</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td><input type="checkbox" id="50" checked />&nbsp;</td>
+                <td><input type="checkbox" id="51" checked />&nbsp;</td>
+                <td><input type="checkbox" id="52" checked />&nbsp;</td>
+                <td><input type="checkbox" id="53" checked />&nbsp;</td>
+                <td><input type="checkbox" id="54" checked />&nbsp;</td>
+                <td><input type="checkbox" id="55" checked />&nbsp;</td>
+                <td><input type="checkbox" id="56" checked />&nbsp;</td>
+                <td><input type="checkbox" id="57" checked />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="r5" checked onclick="ToggleRow(this)" />&nbsp;</td>
+            </tr>
+            <tr>
+                <th id="sCol">Select Column</th>
+                <td class="columnBox"><input type="checkbox" id="c0" checked onclick="ToggleCol(this)" />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="c1" checked onclick="ToggleCol(this)" />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="c2" checked onclick="ToggleCol(this)" />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="c3" checked onclick="ToggleCol(this)" />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="c4" checked onclick="ToggleCol(this)" />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="c5" checked onclick="ToggleCol(this)" />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="c6" checked onclick="ToggleCol(this)" />&nbsp;</td>
+                <td class="columnBox"><input type="checkbox" id="c7" checked onclick="ToggleCol(this)" />&nbsp;</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center;">
+        <div id="Error"></div>
+        <input class="btn btn-primary btn-lg" type="button" value="GENERATE" onclick="ProduceTimeTable()">
+        <h5>or see <a href="Instructions.html" target="_blank">instructions</a></h5>
+    </div>
+    <div id="Output"></div>
+</body>
+
 </html>
