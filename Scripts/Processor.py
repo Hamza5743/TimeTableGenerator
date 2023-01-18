@@ -36,7 +36,8 @@ for row, val in enumerate(sh.values):
                 Section = period.split("(")[-1].split(")")[0]
                 Course = period.split("(")[0].strip()
                 stime = (col - 2) * 10
-                etime = (((col - 2) + CourseLength[(row + 5, col + 1)]) * 10) + 10
+                etime = (((col - 2) + CourseLength.get((row + 5, col + 1), 0)) * 10) + 10
+                # etime = (((col - 2) + CourseLength[(row + 5, col + 1)]) * 10) + 10
                 if Course == "Obj. Oriented Programming":
                     Course = "Object Oriented Programming"
                 elif Course == "Obj. Ori. Analysis & Design":
