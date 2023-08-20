@@ -1,8 +1,6 @@
 import openpyxl
-print("hi")
-book = openpyxl.load_workbook("table.xlsx")
-print("hi")
 
+book = openpyxl.load_workbook("table.xlsx")
 sheetname = book.sheetnames[0];
 for name in book.sheetnames:
     if 'TT' in name:
