@@ -48,7 +48,7 @@ for row, val in enumerate(sh.values):
                 elif Course == "English Comp Lab":
                     Course = "English Composition and Comprehension Lab"
                 Periods.append(
-                    [Course, Section, str(stime - 40), str(etime - 40), str(Day), Venue]
+                    [Course, Section, str(stime - 30), str(etime - 30), str(Day), Venue]
                 )
 
 def compare(p):
