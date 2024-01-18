@@ -1,7 +1,7 @@
 import openpyxl
 
 book = openpyxl.load_workbook("table.xlsx")
-sheetname = book.sheetnames[0];
+sheetname = book.sheetnames[0]
 for name in book.sheetnames:
     if 'TT' in name:
         sheetname = name
@@ -37,7 +37,8 @@ for row, val in enumerate(sh.values):
                 Course = period.split("(")[0].strip()
                 stime = (col - 2) * 10
                 if (row + 5, col + 1) in CourseLength:
-                    etime = (((col - 2) + CourseLength[(row + 5, col + 1)]) * 10) + 10
+                    etime = (
+                        ((col - 2) + CourseLength[(row + 5, col + 1)]) * 10) + 10
                 else:
                     etime = 0
                     continue
@@ -48,8 +49,10 @@ for row, val in enumerate(sh.values):
                 elif Course == "English Comp Lab":
                     Course = "English Composition and Comprehension Lab"
                 Periods.append(
-                    [Course, Section, str(stime - 40), str(etime - 40), str(Day), Venue]
+                    [Course, Section, str(stime - 30),
+                     str(etime - 30), str(Day), Venue]
                 )
+
 
 def compare(p):
     if "Lab" in p[0]:
